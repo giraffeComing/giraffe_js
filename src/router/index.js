@@ -8,6 +8,7 @@ import VRate from '../components/Rate.vue'
 import VObjDefine from '../components/objDefine.vue'
 import VDefineclosure from '../components/defineClosure.vue'
 import VParseIntAndExchange from '../components/parseIntAndExchange.vue'
+import VShortLu from '../components/shortLu.vue'
 
 Vue.use(Router)
 
@@ -58,11 +59,17 @@ export default new Router({
           name: 'VDefineclosure',
           component: VDefineclosure
       },
-      // 匿名函数的多种定义形式
+      // 位运算与数值取整和数值交换
       {
           path: '/parseIntAndExchange',
           name: 'VParseIntAndExchange',
           component: VParseIntAndExchange
-      }
+      },
+      // 短路运算
+      {
+          path: '/shortlu',
+          name: 'VShortLu',
+          component: VShortLu
+      },
   ]
 })

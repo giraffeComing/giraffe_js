@@ -22,6 +22,9 @@
         <router-link :to="{name: 'VParseIntAndExchange'}">
             位运算与数字取整和数值交换
         </router-link>
+        <router-link :to="{name: 'VShortLu'}">
+            短路运算
+        </router-link>
     </div>
 </template>
 

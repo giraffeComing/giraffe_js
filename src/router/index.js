@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import AnonymousFunction from '../components/AnonymousFunction.vue'
 import VIndex from '../components/index.vue'
 import VClosure from '../components/closure.vue'
+import VArrayUnique from '../components/ArrayUnique.vue'
+import VRate from '../components/Rate.vue'
 
 Vue.use(Router)
 
@@ -28,6 +30,18 @@ export default new Router({
           path: '/closure',
           name: 'VClosure',
           component: VClosure
+      },
+      // Set数组去重（数组去重的最简方法）
+      {
+          path: '/arrunique',
+          name: 'VArrayUnique',
+          component: VArrayUnique
+      },
+      // 一行代码写个评分组件
+      {
+          path: '/rate',
+          name: 'VRate',
+          component: VRate
       }
   ]
 })

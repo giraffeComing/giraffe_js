@@ -6,6 +6,12 @@
         <router-link :to="{name: 'VClosure'}">
             for循环给li加点击事件与闭包
         </router-link>
+        <router-link :to="{name: 'VArrayUnique'}">
+            数组去重的几种方法
+        </router-link>
+        <router-link :to="{name: 'VRate'}">
+            用splice一行写评分组件
+        </router-link>
     </div>
 </template>
 

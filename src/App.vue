@@ -22,8 +22,12 @@
     body {
         height: 100%;
         padding: 10px;
+        color: #fff;
+        background: #272822;
     }
-
+    img{
+        display: block;
+    }
     * {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         user-select: none;

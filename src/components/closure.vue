@@ -1,5 +1,6 @@
 <template>
     <div>
+        <v-tool></v-tool>
         <p>实例说明，用for循环给ul中的每个li绑定独立的点击事件，弹出点击li的索引值</p>
         <p>方法一：for循环匿名函数包装器</p>
         <ul ref="ul1">
@@ -22,9 +23,12 @@
 </template>
 
 <script>
+    import VTool from './tools.vue'
     export default {
         name: '',
-        components: {},
+        components: {
+            VTool
+        },
         data () {
             return {}
         },

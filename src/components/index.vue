@@ -1,5 +1,6 @@
 <template>
     <div>
+        <v-tool></v-tool>
         <p class="len">{{len}}</p>
         <router-link :to="{name: 'AnonymousFunction'}">
             匿名函数与闭包
@@ -29,18 +30,21 @@
 </template>
 
 <script>
+    import VTool from './tools.vue'
     export default {
         name: '',
-        components: {},
+        components: {
+            VTool
+        },
         mounted(){
             this.len = document.querySelectorAll('a').length;
             Array.prototype.forEach.call(document.querySelectorAll('a'),
                 dom => dom.style.outline = `1px solid #${parseInt(Math.random() *
-                    Math.pow(2,24)).toString(16)}`)
+                    Math.pow(2,24)).toString(16)}`);
         },
         data () {
             return {
-                len:''
+                len:'',
             }
         }
     }
@@ -52,11 +56,5 @@
         padding: 5px 10px;
         margin-right: 5px;
     }
-    .len{
-       display: block;
-        position: fixed;
-        left: 5px;
-        bottom: 5px;
-        font-size: 24px;
-    }
+
 </style>

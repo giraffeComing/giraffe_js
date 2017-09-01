@@ -1,5 +1,6 @@
 <template>
     <div>
+        <v-tool></v-tool>
         <p>{{num1}}</p>
         <p>{{num2}}</p>
         <p>{{num3}}</p>
@@ -10,9 +11,12 @@
 </template>
 
 <script>
+    import VTool from './tools.vue'
     export default {
         name: '',
-        components: {},
+        components: {
+            VTool
+        },
         data () {
             return {
                 num1: '',

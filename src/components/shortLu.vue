@@ -1,13 +1,17 @@
 <template>
     <div>
+        <v-tool></v-tool>
         <img src="../assets/shortLu.png" alt="">
     </div>
 </template>
 
 <script>
+    import VTool from './tools.vue'
     export default {
         name: '',
-        components: {},
+        components: {
+            VTool
+        },
         data () {
             return {}
         },

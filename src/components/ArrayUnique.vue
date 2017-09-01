@@ -1,5 +1,6 @@
 <template>
     <div>
+        <v-tool></v-tool>
         <p>初始数组：[1,2,3,4,5,1,2,3,4,1,2,'aaa','aaa',[12],[12]]</p>
         <p>{{newArr1}}</p>
         <p>{{newArr2}}</p>
@@ -10,9 +11,12 @@
 </template>
 
 <script>
+    import VTool from './tools.vue'
     export default {
         name: '',
-        components: {},
+        components: {
+            VTool
+        },
         data () {
             return {
                 newArr1 : [],

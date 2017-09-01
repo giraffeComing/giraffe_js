@@ -1,14 +1,18 @@
 <template>
     <div>
+        <v-tool></v-tool>
         {{rate}}
         <img src="../assets/splice-rate.png" alt="">
     </div>
 </template>
 
 <script>
+    import VTool from './tools.vue'
     export default {
         name: '',
-        components: {},
+        components: {
+            VTool
+        },
         data () {
             return {
                 rate:''

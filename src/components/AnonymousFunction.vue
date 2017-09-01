@@ -1,5 +1,6 @@
 <template>
     <div>
+        <v-tool></v-tool>
         <p>匿名函数中返回闭包：</p>
         <p>{{increaseData}}</p>
         <p>{{decreaseData}}</p>
@@ -9,9 +10,12 @@
 </template>
 
 <script>
+    import VTool from './tools.vue'
     export default {
         name: '',
-        components: {},
+        components: {
+            VTool
+        },
         data () {
             return {
                 getNum:'',

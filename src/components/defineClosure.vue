@@ -1,14 +1,18 @@
 <template>
     <div>
+        <v-tool></v-tool>
         <p>使用的时候要注意这些各式各样的匿名函数写法的返回值是不一样的，有的返回1，有的返回-1，有的返回ture</p>
         <img src="../assets/defineclosure.png" alt="">
     </div>
 </template>
 
 <script>
+    import VTool from './tools.vue'
     export default {
         name: '',
-        components: {},
+        components: {
+            VTool
+        },
         data () {
             return {
             }

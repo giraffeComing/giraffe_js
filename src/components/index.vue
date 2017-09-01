@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p class="len">{{len}}</p>
         <router-link :to="{name: 'AnonymousFunction'}">
             匿名函数与闭包
         </router-link>
@@ -18,6 +19,9 @@
         <router-link :to="{name: 'VDefineclosure'}">
             匿名函数的N种定义形式
         </router-link>
+        <router-link :to="{name: 'VParseIntAndExchange'}">
+            位运算与数字取整和数值交换
+        </router-link>
     </div>
 </template>
 
@@ -26,21 +30,30 @@
         name: '',
         components: {},
         mounted(){
+            this.len = document.querySelectorAll('a').length;
             Array.prototype.forEach.call(document.querySelectorAll('a'),
                 dom => dom.style.outline = `1px solid #${parseInt(Math.random() *
                     Math.pow(2,24)).toString(16)}`)
         },
         data () {
-            return {}
+            return {
+                len:''
+            }
         }
     }
 </script>
 
 <style scoped lang="scss" rel="stylesheet/scss">
-
-a{
-    display: inline-block;
-    padding: 5px 10px;
-    margin-right: 5px;
-}
+    a{
+        display: inline-block;
+        padding: 5px 10px;
+        margin-right: 5px;
+    }
+    .len{
+       display: block;
+        position: fixed;
+        left: 5px;
+        bottom: 5px;
+        font-size: 24px;
+    }
 </style>

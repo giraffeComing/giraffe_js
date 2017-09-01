@@ -7,6 +7,7 @@ import VArrayUnique from '../components/ArrayUnique.vue'
 import VRate from '../components/Rate.vue'
 import VObjDefine from '../components/objDefine.vue'
 import VDefineclosure from '../components/defineClosure.vue'
+import VParseIntAndExchange from '../components/parseIntAndExchange.vue'
 
 Vue.use(Router)
 
@@ -56,6 +57,12 @@ export default new Router({
           path: '/defineclosure',
           name: 'VDefineclosure',
           component: VDefineclosure
+      },
+      // 匿名函数的多种定义形式
+      {
+          path: '/parseIntAndExchange',
+          name: 'VParseIntAndExchange',
+          component: VParseIntAndExchange
       }
   ]
 })

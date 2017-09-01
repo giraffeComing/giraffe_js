@@ -12,6 +12,9 @@
         <router-link :to="{name: 'VRate'}">
             用splice一行写评分组件
         </router-link>
+        <router-link :to="{name: 'VObjDefine'}">
+            对象定义的新玩法
+        </router-link>
     </div>
 </template>
 

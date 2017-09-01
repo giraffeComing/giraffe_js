@@ -5,6 +5,7 @@ import VIndex from '../components/index.vue'
 import VClosure from '../components/closure.vue'
 import VArrayUnique from '../components/ArrayUnique.vue'
 import VRate from '../components/Rate.vue'
+import VObjDefine from '../components/objDefine.vue'
 
 Vue.use(Router)
 
@@ -42,6 +43,12 @@ export default new Router({
           path: '/rate',
           name: 'VRate',
           component: VRate
+      },
+      // 对象定义的新玩法
+      {
+          path: '/objdefine',
+          name: 'VObjDefine',
+          component: VObjDefine
       }
   ]
 })

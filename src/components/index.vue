@@ -15,6 +15,9 @@
         <router-link :to="{name: 'VObjDefine'}">
             对象定义的新玩法
         </router-link>
+        <router-link :to="{name: 'VDefineclosure'}">
+            匿名函数的N种定义形式
+        </router-link>
     </div>
 </template>
 

@@ -6,6 +6,7 @@ import VClosure from '../components/closure.vue'
 import VArrayUnique from '../components/ArrayUnique.vue'
 import VRate from '../components/Rate.vue'
 import VObjDefine from '../components/objDefine.vue'
+import VDefineclosure from '../components/defineClosure.vue'
 
 Vue.use(Router)
 
@@ -49,6 +50,12 @@ export default new Router({
           path: '/objdefine',
           name: 'VObjDefine',
           component: VObjDefine
+      },
+      // 匿名函数的多种定义形式
+      {
+          path: '/defineclosure',
+          name: 'VDefineclosure',
+          component: VDefineclosure
       }
   ]
 })

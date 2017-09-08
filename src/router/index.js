@@ -9,6 +9,7 @@ import VObjDefine from '../components/objDefine.vue'
 import VDefineclosure from '../components/defineClosure.vue'
 import VParseIntAndExchange from '../components/parseIntAndExchange.vue'
 import VShortLu from '../components/shortLu.vue'
+import VPromise from '../components/Promise.vue'
 
 Vue.use(Router)
 
@@ -70,6 +71,12 @@ export default new Router({
           path: '/shortlu',
           name: 'VShortLu',
           component: VShortLu
+      },
+      // Promise
+      {
+          path: '/promise',
+          name: 'VPromise',
+          component: VPromise
       },
   ]
 })

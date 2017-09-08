@@ -26,6 +26,9 @@
         <router-link :to="{name: 'VShortLu'}">
             短路运算
         </router-link>
+        <router-link :to="{name: 'VPromise'}">
+            Promise
+        </router-link>
     </div>
 </template>
 

@@ -10,6 +10,7 @@ import VDefineclosure from '../components/defineClosure.vue'
 import VParseIntAndExchange from '../components/parseIntAndExchange.vue'
 import VShortLu from '../components/shortLu.vue'
 import VPromise from '../components/Promise.vue'
+import VThreemu from '../components/threeMu.vue'
 
 Vue.use(Router)
 
@@ -77,6 +78,12 @@ export default new Router({
           path: '/promise',
           name: 'VPromise',
           component: VPromise
+      },
+      // Promise
+      {
+          path: '/threemu',
+          name: 'VThreemu',
+          component: VThreemu
       },
   ]
 })

@@ -17,13 +17,13 @@
     }
     html {
         height: 100%;
+        background: #272822;
     }
 
     body {
         height: 100%;
         padding: 10px;
         color: #fff;
-        background: #272822;
     }
     img{
         display: block;

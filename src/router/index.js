@@ -11,8 +11,11 @@ import VParseIntAndExchange from '../components/parseIntAndExchange.vue'
 import VShortLu from '../components/shortLu.vue'
 import VPromise from '../components/Promise.vue'
 import VThreemu from '../components/threeMu.vue'
+import VCloneAndDeepClone from '../components/CloneAndDeepClone.vue'
+import VTailCallFun from '../components/TailCallFun.vue'
+import VObjectTypeTest from '../components/ObjectTypeTest.vue'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -79,11 +82,29 @@ export default new Router({
           name: 'VPromise',
           component: VPromise
       },
-      // Promise
+      // 三目
       {
           path: '/threemu',
           name: 'VThreemu',
           component: VThreemu
+      },
+      // 浅克隆与深克隆
+      {
+          path: '/deepclone',
+          name: 'VCloneAndDeepClone',
+          component: VCloneAndDeepClone
+      },
+      // 尾调函数
+      {
+          path: '/tailcall',
+          name: 'VTailCallFun',
+          component: VTailCallFun
+      },
+      // 对象类型检测
+      {
+          path: '/typetest',
+          name: 'VObjectTypeTest',
+          component: VObjectTypeTest
       },
   ]
 })

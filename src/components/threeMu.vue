@@ -18,6 +18,17 @@
             this.lianXuSanMu();
 //            调用嵌套的三目
             this.qianTaoSanMu();
+            this.aaa=window;
+            window.name='hello world'
+
+            setTimeout(()=>{
+                window.name='hellossss world'
+            },3000)
+        },
+        watch:{
+            aaa:function () {
+                console.log('adasdasdasdasdasds')
+            }
         },
         methods:{
             lianXuSanMu:function () {
@@ -76,7 +87,9 @@
             }
         },
         data () {
-            return {}
+            return {
+                aaa:''
+            }
         }
     }
 </script>

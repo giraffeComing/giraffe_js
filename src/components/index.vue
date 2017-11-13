@@ -32,6 +32,15 @@
         <router-link :to="{name: 'VThreemu'}">
             三目运算的连续&嵌套
         </router-link>
+        <router-link :to="{name: 'VCloneAndDeepClone'}">
+            对象深&浅拷贝
+        </router-link>
+        <router-link :to="{name: 'VTailCallFun'}">
+            尾调函数
+        </router-link>
+        <router-link :to="{name: 'VObjectTypeTest'}">
+            对象类型检测
+        </router-link>
     </div>
 </template>
 
@@ -61,6 +70,7 @@
         display: inline-block;
         padding: 5px 10px;
         margin-right: 5px;
+        margin-bottom: 10px;
     }
 
 </style>

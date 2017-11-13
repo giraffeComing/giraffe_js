@@ -12,6 +12,13 @@
         components: {
             VTool
         },
+        mounted() {
+            document.onkeydown=function(e) {
+                if(e && e.keyCode==40 ){
+
+                }
+            }
+        },
         created(){
 
             function fn() {

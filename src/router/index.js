@@ -14,6 +14,7 @@ import VThreemu from '../components/threeMu.vue'
 import VCloneAndDeepClone from '../components/CloneAndDeepClone.vue'
 import VTailCallFun from '../components/TailCallFun.vue'
 import VObjectTypeTest from '../components/ObjectTypeTest.vue'
+import VInStanceOf from '../components/InStanceOf.vue'
 
 Vue.use(Router);
 
@@ -105,6 +106,12 @@ export default new Router({
           path: '/typetest',
           name: 'VObjectTypeTest',
           component: VObjectTypeTest
+      },
+      // 构造函数检查
+      {
+          path: '/instanceof',
+          name: 'VInStanceOf',
+          component: VInStanceOf
       },
   ]
 })

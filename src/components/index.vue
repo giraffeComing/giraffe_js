@@ -44,6 +44,15 @@
         <router-link :to="{name: 'VInStanceOf'}">
             instanceof在定义对象时候的使用
         </router-link>
+        <router-link :to="{name: 'VSingleModelOne'}">
+            单体模式之模块化封装
+        </router-link>
+        <router-link :to="{name: 'VSingleModelTwo'}">
+            单体模式之静态变量
+        </router-link>
+        <router-link :to="{name: 'VSingleModelThree'}">
+            单体模式之惰性单体
+        </router-link>
     </div>
 </template>
 

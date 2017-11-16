@@ -15,6 +15,9 @@ import VCloneAndDeepClone from '../components/CloneAndDeepClone.vue'
 import VTailCallFun from '../components/TailCallFun.vue'
 import VObjectTypeTest from '../components/ObjectTypeTest.vue'
 import VInStanceOf from '../components/InStanceOf.vue'
+import VSingleModelOne from '../components/SingleModelOne.vue'
+import VSingleModelTwo from '../components/SingleModelTwo.vue'
+import VSingleModelThree from '../components/SingleModelThree.vue'
 
 Vue.use(Router);
 
@@ -112,6 +115,24 @@ export default new Router({
           path: '/instanceof',
           name: 'VInStanceOf',
           component: VInStanceOf
+      },
+      // 单体模式之模块化封装
+      {
+          path: '/singlemodelone',
+          name: 'VSingleModelOne',
+          component: VSingleModelOne
+      },
+      // 单体模式之静态变量
+      {
+          path: '/singlemodeltwo',
+          name: 'VSingleModelTwo',
+          component: VSingleModelTwo
+      },
+      // 单体模式之惰性单体
+      {
+          path: '/singlemodelthree',
+          name: 'VSingleModelThree',
+          component: VSingleModelThree
       },
   ]
 })

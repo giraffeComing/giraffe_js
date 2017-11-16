@@ -22,6 +22,29 @@
                 console.log(new_arr);
             },
 
+//            看到的一种深克隆，效果有待考究
+            deepClone : function (data) {
+                var t = type(data), o, i, ni;
+                if(t === 'array') {
+                    o = [];
+                }else if( t === 'object') {
+                    o = {};
+                }else {
+                    return data;
+                }
+                if(t === 'array') {
+                    for (i = 0, ni = data.length; i < ni; i++) {
+                        o.push(deepClone(data[i]));
+                    }
+                    return o;
+                }else if( t === 'object') {
+                    for( i in data) {
+                        o[i] = deepClone(data[i]);
+                    }
+                    return o;
+                }
+            },
+
             test : function() {
                 let obj1 = { a: 0 , b: { c: 0}};
                 let obj2 = Object.assign({}, obj1);

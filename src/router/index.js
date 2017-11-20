@@ -18,6 +18,7 @@ import VInStanceOf from '../components/InStanceOf.vue'
 import VSingleModelOne from '../components/SingleModelOne.vue'
 import VSingleModelTwo from '../components/SingleModelTwo.vue'
 import VSingleModelThree from '../components/SingleModelThree.vue'
+import VJqueryComponent from '../components/jqueryComponent.vue'
 
 Vue.use(Router);
 
@@ -133,6 +134,12 @@ export default new Router({
           path: '/singlemodelthree',
           name: 'VSingleModelThree',
           component: VSingleModelThree
+      },
+      // jquery组件化
+      {
+          path: '/jquerycomponent',
+          name: 'VJqueryComponent',
+          component: VJqueryComponent
       },
   ]
 })

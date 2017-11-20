@@ -53,6 +53,9 @@
         <router-link :to="{name: 'VSingleModelThree'}">
             单体模式之惰性单体
         </router-link>
+        <router-link :to="{name: 'VJqueryComponent'}">
+            jquery组件化开发
+        </router-link>
     </div>
 </template>
 

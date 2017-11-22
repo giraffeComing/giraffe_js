@@ -19,6 +19,7 @@ import VSingleModelOne from '../components/SingleModelOne.vue'
 import VSingleModelTwo from '../components/SingleModelTwo.vue'
 import VSingleModelThree from '../components/SingleModelThree.vue'
 import VJqueryComponent from '../components/jqueryComponent.vue'
+import VJs from '../components/JS_E_I_P.vue'
 
 Vue.use(Router);
 
@@ -140,6 +141,12 @@ export default new Router({
           path: '/jquerycomponent',
           name: 'VJqueryComponent',
           component: VJqueryComponent
+      },
+      // jquery组件化
+      {
+          path: '/jseip',
+          name: 'VJs',
+          component: VJs
       },
   ]
 })

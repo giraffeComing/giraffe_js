@@ -2,6 +2,9 @@
     <div>
         <v-tool></v-tool>
         <p class="len">{{len}}</p>
+        <router-link :to="{name: 'VJs'}" class="red">
+            封装、继承、多态
+        </router-link>
         <router-link :to="{name: 'AnonymousFunction'}">
             匿名函数与闭包
         </router-link>
@@ -86,6 +89,9 @@
         padding: 5px 10px;
         margin-right: 5px;
         margin-bottom: 10px;
+    }
+    .red{
+        outline: red solid 5px !important;
     }
 
 </style>

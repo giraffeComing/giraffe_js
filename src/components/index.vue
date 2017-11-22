@@ -32,11 +32,11 @@
         <router-link :to="{name: 'VPromise'}">
             Promise
         </router-link>
-        <router-link :to="{name: 'VThreemu'}">
-            三目运算的连续&嵌套
-        </router-link>
         <router-link :to="{name: 'VObjectTypeTest'}">
             对象类型检测
+        </router-link>
+        <router-link :to="{name: 'VThreemu'}">
+            三目运算的连续&嵌套
         </router-link>
         <router-link :to="{name: 'VCloneAndDeepClone'}">
             对象深&浅拷贝
@@ -60,7 +60,7 @@
             jquery组件化开发
         </router-link>
         <router-link :to="{name: 'VTemp'}">
-            模板模式
+            模板模式之弹窗
         </router-link>
     </div>
 </template>

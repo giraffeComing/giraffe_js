@@ -59,6 +59,9 @@
         <router-link :to="{name: 'VJqueryComponent'}">
             jquery组件化开发
         </router-link>
+        <router-link :to="{name: 'VTemp'}">
+            模板模式
+        </router-link>
     </div>
 </template>
 

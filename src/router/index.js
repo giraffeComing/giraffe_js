@@ -20,6 +20,7 @@ import VSingleModelTwo from '../components/SingleModelTwo.vue'
 import VSingleModelThree from '../components/SingleModelThree.vue'
 import VJqueryComponent from '../components/jqueryComponent.vue'
 import VJs from '../components/JS_E_I_P.vue'
+import VTemp from '../components/TempMode.vue'
 
 Vue.use(Router);
 
@@ -142,11 +143,17 @@ export default new Router({
           name: 'VJqueryComponent',
           component: VJqueryComponent
       },
-      // jquery组件化
+      // js封装、继承、多态
       {
           path: '/jseip',
           name: 'VJs',
           component: VJs
+      },
+      // 模板模式
+      {
+          path: '/tempmode',
+          name: 'VTemp',
+          component: VTemp
       },
   ]
 })

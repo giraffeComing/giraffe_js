@@ -62,6 +62,9 @@
         <router-link :to="{name: 'VTemp'}">
             模板模式之弹窗
         </router-link>
+        <router-link :to="{name: 'VState'}">
+            状态模式基础
+        </router-link>
     </div>
 </template>
 

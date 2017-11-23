@@ -21,6 +21,7 @@ import VSingleModelThree from '../components/SingleModelThree.vue'
 import VJqueryComponent from '../components/jqueryComponent.vue'
 import VJs from '../components/JS_E_I_P.vue'
 import VTemp from '../components/TempMode.vue'
+import VState from '../components/State.vue'
 
 Vue.use(Router);
 
@@ -155,5 +156,11 @@ export default new Router({
           name: 'VTemp',
           component: VTemp
       },
+      // 状态模式
+      {
+          path: '/state',
+          name: 'VState',
+          component: VState
+      }
   ]
 })
